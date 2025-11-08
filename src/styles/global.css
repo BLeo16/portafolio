@@ -143,6 +143,83 @@ body {
 }
 .contact-pill svg { width: 18px; height: 18px; }
 
+
+.hero-photo-wrapper {
+  display: inline-block;
+  border-radius: 9999px;
+  padding: 6px; /* space for the ring */
+  background: linear-gradient(180deg, var(--color-brand-300), var(--color-brand-500));
+  box-shadow: 0 12px 36px rgba(52,8,86,0.16);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+.hero-photo-wrapper:focus-within {
+  outline: 3px solid rgba(52,8,86,0.12);
+  outline-offset: 4px;
+}
+.hero-photo {
+  display: block;
+  width: 160px;
+  height: 160px;
+  border-radius: 9999px;
+  object-fit: cover;
+  display: block;
+  border: 4px solid var(--color-brand-50);
+  transform-origin: center;
+  transition: transform 260ms cubic-bezier(.2,.9,.2,1), box-shadow 260ms ease;
+}
+.hero-photo:hover {
+  transform: translateY(-4px) rotate(1deg) scale(1.04);
+}
+
+@media (min-width: 768px) {
+  .hero-photo {
+    width: 220px;
+    height: 220px;
+  }
+}
+/* ==== Efecto de ondas alrededor de la foto === */
+
+.hero-photo-wrapper {
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+/* Ondas que pulsan suavemente alrededor */
+.hero-photo-wrapper::before,
+.hero-photo-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  border: 3px solid var(--color-brand-300);
+  opacity: 0.4;
+  z-index: -1;
+  animation: wave-pulse 3.4s ease-out infinite;
+}
+
+/* Segunda onda con retraso para efecto continuo */
+.hero-photo-wrapper::after {
+  animation-delay: 1.75s;
+  border-color: var(--color-brand-500);
+}
+
+@keyframes wave-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.45;
+  }
+  70% {
+    transform: scale(1.6);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(3.2);
+    opacity: 0;
+  }
+}
+
+
 /* Footer */
 .site-footer {
   background: linear-gradient(180deg, var(--color-brand-700), var(--color-brand-800));
