@@ -34,7 +34,7 @@ export default function Hero() {
 
                     <a
                         className="contact-pill"
-                        href="https://wa.me/5491123456789?text=Hola%20Leonardo!%20Me%20gustaría%20contactarte"
+                        href="https://wa.me/593984918238?text=Hola%20Leonardo!%20Me%20gustaría%20contactarte"
                         target="_blank"
                         rel="noreferrer"
                     >

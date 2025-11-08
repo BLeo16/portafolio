@@ -20,7 +20,6 @@
 }
 
 .text-brand { color: var(--color-brand-500) !important; }
-.text-brand-50 { color: var(--color-brand-500) !important; }
 .text-brand-300 { color: var(--color-brand-300) !important; }
 .text-brand-700 { color: var(--color-brand-700) !important; }
 .bg-brand-50 { background-color: var(--color-brand-50) !important; }

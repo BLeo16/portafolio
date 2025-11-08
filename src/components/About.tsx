@@ -6,8 +6,9 @@ export default function About() {
         <p className="text-gray-600 leading-relaxed">
           Soy un <strong>Ingeniero en Software</strong> enfocado en el desarrollo de soluciones
           tecnológicas escalables y eficientes. Tengo experiencia en la implementación de 
-          microservicios con <strong>NestJS</strong>, desarrollo móvil con <strong>Flutter</strong> 
-          y despliegues en contenedores <strong>Docker</strong>.  
+          microservicios con <strong>NestJS</strong>, desarrollo móvil con <strong>Flutter </strong>y desarrollo 
+          web con <strong>NextJS</strong> y <strong>Astro</strong>, en conjunto con
+          despliegues en contenedores <strong>Docker</strong>.  
         </p>
         <p className="text-gray-600 mt-4 leading-relaxed">
           He participado en proyectos de impacto académico como <strong>UTN-MÓVIL</strong>, donde 

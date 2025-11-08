@@ -6,9 +6,19 @@ export default function Navbar() {
     return (
         <nav className="fixed top-0 left-0 w-full bg-white/60 backdrop-blur-md border-brand-100/30 shadow-sm z-50">
             <div className="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
-                <a href="/" className="text-xl font-semibold navbar-brand">
-                    Leonardo Flores
-                </a>
+                <div className="flex items-center ">
+                    <a href="/">
+                        <img
+                            src="/images/logo.png"
+                            alt="Logo Leonardo Flores"
+                            className="h-10 w-auto px-4"
+                            style={{ display: 'inline-block' }}
+                        />
+                    </a>
+                    <a href="/" className="text-xl font-semibold navbar-brand">
+                        Leonardo Flores
+                    </a>
+                </div>
 
                 {/* Botón menú móvil */}
                 <button
