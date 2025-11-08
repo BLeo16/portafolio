@@ -1,1 +1,156 @@
 @import "tailwindcss";
+
+/* Paleta de colores */
+:root {
+  --color-brand-50: #d5c6dc;
+  --color-brand-100: #ab90b9;
+  --color-brand-200: #815c97;
+  --color-brand-300: #572975;
+  --color-brand-400: #3d0b60;
+  --color-brand-500: #340856;
+  --color-brand-600: #2b064d;
+  --color-brand-700: #230443;
+  --color-brand-800: #1b003a;
+
+  /* Neutros
+     grises para textos secundarios */
+  --color-text: #111827;
+  --color-muted: #4b5563;
+  --bg-page: var(--color-brand-50);
+}
+
+.text-brand { color: var(--color-brand-500) !important; }
+.text-brand-50 { color: var(--color-brand-500) !important; }
+.text-brand-300 { color: var(--color-brand-300) !important; }
+.text-brand-700 { color: var(--color-brand-700) !important; }
+.bg-brand-50 { background-color: var(--color-brand-50) !important; }
+
+.btn-brand {
+  background: var(--color-brand-500);
+  color: #fff;
+}
+.btn-brand:hover {
+  background: var(--color-brand-600);
+}
+
+.link-brand { color: var(--color-brand-500); }
+.hover-brand:hover { color: var(--color-brand-300); }
+
+.navbar-brand { color: var(--color-brand-500); }
+
+#links a.button.brand {
+  background: linear-gradient(83.21deg, var(--color-brand-500) 0%, var(--color-brand-300) 100%);
+}
+
+/* Preferencias  globales */
+body {
+  background-color: var(--bg-page);
+  color: var(--color-text);
+}
+
+/* Mejoras visuales para tarjetas y enlaces */
+.project-card {
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(52,8,86,0.06);
+  background-color: rgba(255,255,255,0.96);
+  color: var(--color-text);
+}
+.project-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 10px 30px rgba(18,17,26,0.12);
+}
+.project-card:focus-within {
+  box-shadow: 0 0 0 6px rgba(52,8,86,0.08);
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(90deg, var(--color-brand-500), var(--color-brand-300));
+  color: white !important;
+  font-weight: 700;
+  border-radius: 9999px;
+  box-shadow: 0 8px 24px rgba(52,8,86,0.18);
+  transition: transform 140ms ease, box-shadow 140ms ease;
+}
+.github-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(52,8,86,0.20);
+}
+
+.tech-badge {
+  font-weight: 700;
+  background-color: rgba(255,255,255,0.04) !important;
+  border: 1px solid rgba(255,255,255,0.03);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.78rem;
+}
+
+.tech-badge svg { opacity: 0.95; }
+
+/* Botones de navegación del carrusel */
+.carousel-btn {
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: rgba(255,255,255,0.9);
+  color: var(--color-brand-700);
+  box-shadow: 0 6px 20px rgba(18,17,26,0.12);
+  border: 1px solid rgba(52,8,86,0.06);
+  transition: transform 120ms ease, background 120ms ease, color 120ms ease;
+}
+.carousel-btn:hover {
+  transform: translateY(-2px);
+  background: white;
+}
+
+/* Fondo global */
+body {
+  background: linear-gradient(180deg, var(--color-brand-50) 0%, #fbf9fd 100%);
+}
+
+/* Contactos en Hero */
+.contact-list {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.contact-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.9rem;
+  background: rgba(255,255,255,0.95);
+  color: var(--color-brand-700);
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(18,17,26,0.06);
+  border: 1px solid rgba(52,8,86,0.04);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+.contact-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(18,17,26,0.08);
+}
+.contact-pill svg { width: 18px; height: 18px; }
+
+/* Footer */
+.site-footer {
+  background: linear-gradient(180deg, var(--color-brand-700), var(--color-brand-800));
+  color: var(--color-brand-50);
+}
+
+.footer-inner { max-width: 1100px; margin: 0 auto; padding: 1.25rem; display:flex; gap:1rem; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+.footer-social { display:flex; gap:1rem; align-items:center; }
+.footer-small { font-size:0.85rem; opacity:0.9; }
+
+
