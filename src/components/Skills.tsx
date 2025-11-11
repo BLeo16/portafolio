@@ -24,7 +24,10 @@ export default function Skills() {
                                 <span className="text-brand">▹</span> TypeScript · Python · Dart
                             </li>
                             <li className="flex items-center gap-2">
-                                <span className="text-brand">▹</span> NestJS · NextJS · Django · Flutter
+                                <span className="text-brand">▹</span> NextJS · Django · Flutter 
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span className="text-brand">▹</span> NestJS · Astro
                             </li>
                         </ul>
                     </div>
