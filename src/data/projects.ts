@@ -20,11 +20,11 @@ export const projects: Project[] = [
         tech: ["Flutter", "NestJS", "Docker", "Firebase"],
     },
     {
-        title: "Portafolio Web",
+        title: "Páginas Web",
         description:
-            "Sitio personal desarrollado con Astro, React, TypeScript y TailwindCSS para mostrar mis proyectos y habilidades.",
-        images:[ "/images/portafolio1.png"],
-        github: "https://github.com/BLeo16/portafolio",
+            "Sitios web desarrollados con Astro, React, TypeScript y TailwindCSS para publicitar tu negocio y servicios.",
+        images: ["/images/web1.png", "/images/web2.png"],
+        github: "https://github.com/BLeo16/f3electrical-group-web",
         tech: ["Astro", "React", "TailwindCSS"],
     },
     {
@@ -34,7 +34,7 @@ export const projects: Project[] = [
         images: [
             "/images/seguridad1.jpg",
             "/images/seguridad2.png"
-            
+
         ],
         github: "https://github.com/BLeo16/seguridad-NestJS",
         tech: ["NestJS", "TypeScript"],
